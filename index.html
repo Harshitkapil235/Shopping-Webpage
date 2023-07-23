@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <!-- Fontawesom cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<style>
+    #logo {
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+    }
+</style>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-4 fixed-top"> 
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between aling-item-center order-lg-0">
+                <img src="download (1).jpg" class="border border-2" id="logo">
+                <span class="text-uppercase fw-lighter ms-2 align-items-center">MFs</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button " class="btn position-relative">
+                    <i class=" fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-prima">5</span>
+                </button>
+
+                <button type="button " class="btn position-relative">
+                    <i class=" fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-prima">6</span>
+                </button>
+
+                <button type="button " class="btn position-relative">
+                    <i class=" fa fa-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0 " id="bttn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+                <span class="menu-icon navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#home" class="nav-link text-uppercase text-dark">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#collections" class="nav-link text-uppercase text-dark">Collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#accessories" class="nav-link text-uppercase text-dark">Accessories</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#trend" class="nav-link text-uppercase text-dark">Trend</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#customize" class="nav-link text-uppercase text-dark">Customize</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#aboutus" class="nav-link text-uppercase text-dark border-0">About US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of NavBar -->
+
+
+    <!-- Header -->
+    <header id="home" class="vh-100 carousel slide" data-bs-ride="carousel" style="margin-top: 34px;">
+        <div class="container h-100 d-flex align-items-center pb-5 carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-black text-decoration-underline">Best Collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-light">Latest Trend
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase">Shop Now</a>
+            </div>
+            <div class="text-center carousel-item ">
+                <h2 class="text-capitalize text-black text-decoration-underline">Best Price</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-light">Easy Customization
+                </h1>
+                <a href="#" class="btn mt-3 text-uppercase">Buy Now</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Collection -->
+    <section id="collection" class="pt-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative  d-inline-block pt-3" id="collections">New Collection</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn " data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark " data-filter=".bottomwear">Bottom Wear</button>
+                    <button type="button" class="btn m-2 text-dark " data-filter=".upperwear">Upper Wear</button>
+                    <button type="button" class="btn m-2 text-dark " data-filter=".shoes">Shoes</button>
+                </div>
+
+                <div class="collection-list mt-4 row gx-0 gy-3 " id="add">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 bottomwear ">
+                        <div class="collection-img position-relative">
+                            <img src="download.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Streetwear Mode</p>
+                            <p class="text-capitalize my-1 text-start ">Two-Piexe oversized t-shirt with
+                                half sleeves in heavyweight jearsy.</p>
+                            <span class="fw-bold text-success ">50% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1500</span>
+                            <span class="fw-bold ">₹750</span> <br>
+                            <span class="text-bg-warning p-1 rounded-2 mt-4">Only for Toady</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 upperwear">
+                        <div class="collection-img position-relative">
+                            <img src="6e3da33b2feae07d744cf53145a7aa4c.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Blue Shirt Combination</p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Best Men's Slim Fit Oxford Blue
+                                Dress Shirt Outfits.</p>
+                            <span class="fw-bold text-success ">60% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹2000</span>
+                            <span class="fw-bold ">₹800</span> <br>
+                            <span class="text-bg-danger p-1 rounded-2 mt-4">Only 5 left</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="collection-img position-relative">
+                            <img src="blue-denim-shirt-white-henley-shirt-white-jeans-large-88907.jpg" alt=""
+                                class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Style Coordinators
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Light blue denim shirt white
+                                t-shirt no show socks white sneakers </p>
+                            <span class="fw-bold text-success ">60% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹2000</span>
+                            <span class="fw-bold ">₹800</span> <br>
+                            <span class="text-bg-success p-1 rounded-2 mt-4">Best Seller</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="collection-img position-relative">
+                            <img src="a0c636a27031d0529580ea41bbb7e4f3.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Summer outfits men
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Brown Polo T-shirt with cream
+                                chinnoes white sneakers </p>
+                            <span class="fw-bold text-success ">40% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1500</span>
+                            <span class="fw-bold ">₹900</span> <br>
+                            <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="collection-img position-relative">
+                            <img src="0ec11aa98d19ce33b9e04ca8545fad71.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Streetwear Mode</p>
+                            <p class="text-capitalize my-1 text-start "> Brown lightweight pants and white shirt.</p>
+                            <span class="fw-bold text-success ">55% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1900</span>
+                            <span class="fw-bold ">₹850</span> <br>
+                            <span class="text-bg-warning p-1 rounded-2 mt-4">Only for Toady</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 bottomwear">
+                        <div class="collection-img position-relative">
+                            <img src="60fbf7fd5ce1e9e001b9a091660aad74.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Bell Bottom
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Classic five pocket details, a
+                                zipper fly, large back pockets.
+                            </p>
+                            <span class="fw-bold text-success ">40% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1500</span>
+                            <span class="fw-bold ">₹900</span> <br>
+                            <span class="text-bg-danger p-1 rounded-2 mt-4">Only 5 left</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 upperwear">
+                        <div class="collection-img position-relative">
+                            <img src="2ad758ad26fa5c0ac273284bb13135a9.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Blue Denim
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">As per latest trend just out for
+                                only sale
+                            </p>
+                            <span class="fw-bold text-success ">40% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1500</span>
+                            <span class="fw-bold ">₹900</span> <br>
+                            <span class="text-bg-success p-1 rounded-2 mt-4">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 shoes">
+                        <div class="collection-img position-relative">
+                            <img src="0a0283ddb006be1bbce9a5514d763172.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Blue Top Addidas Shoes
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Trendy collection of shoes Gen-Z
+                                that are definitely worth !
+                            </p>
+                            <span class="fw-bold text-success ">40% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1500</span>
+                            <span class="fw-bold ">₹900</span> <br>
+                            <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="collection-img position-relative">
+                            <img src="7f255c50628c201808a8a2c53eea3c92.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Outfits summer
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">t-shirt and half chinnoes</p>
+                            <span class="fw-bold text-success ">60% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹2000</span>
+                            <span class="fw-bold ">₹800</span> <br>
+                            <span class="text-bg-success p-1 rounded-2 mt-4">Best Seller</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+                        <div class="collection-img position-relative">
+                            <img src="26d641edb3f6685958c244bf4543a638.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Men Drop Shoulder Solid Shirt
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Drop Shoulder Solid Shirt
+                                Casual.</p>
+                            <span class="fw-bold text-success ">40% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1500</span>
+                            <span class="fw-bold ">₹900</span> <br>
+                            <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 bottomwear">
+                        <div class="collection-img position-relative">
+                            <img src="aecd34f864c974bd13e269bd731440ad.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Men Blue jeans
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Baggy fit as per latest design</p>
+                            <span class="fw-bold text-success ">20% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1200</span>
+                            <span class="fw-bold ">₹950</span> <br>
+                            <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 bottomwear">
+                        <div class="collection-img position-relative">
+                            <img src="1bbe189c7ce18be846d9fcfce13a5b39.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Men Fade Black jeans
+                            </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Baggy fit quite faded design</p>
+                            <span class="fw-bold text-success ">40% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹1500</span>
+                            <span class="fw-bold ">₹900</span> <br>
+                            <span class="text-bg-warning p-1 rounded-2 mt-4">Only For Toady</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class="collection-img position-relative">
+                            <img src="8537bec48615c9b3fe2935d904988357.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Street style</p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Best Men's Slim Fit Mehroom
+                                Sweatshirt with blue demin
+                                Jeans.</p>
+                            <span class="fw-bold text-success ">55% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹2500</span>
+                            <span class="fw-bold ">₹1125</span> <br>
+                            <span class="text-bg-danger p-1 rounded-2 mt-4">Only 10 left</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 shoes">
+                        <div class="collection-img position-relative">
+                            <img src="46ada488a7ac073f6eb061feaba57dec.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Nike Men's Court Royale 2 </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Reign supreme everywhere you go in
+                                the sleek and sophisticated.
+                            </p>
+                            <span class="fw-bold text-success ">55% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹2500</span>
+                            <span class="fw-bold ">₹1125</span> <br>
+                            <span class="text-bg-success p-1 rounded-2 mt-4">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 shoes">
+                        <div class="collection-img position-relative">
+                            <img src="bfd8e55cba7d7c611bb40b9dc93b5a64.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Nike SB Adversary </p>
+                            <p class="text-capitalize my-1 text-start text-lowercase">Nike SB introduces the Adversary,
+                                a light and airy skate shoe
+                            </p>
+                            <span class="fw-bold text-success ">55% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹2500</span>
+                            <span class="fw-bold ">₹1125</span> <br>
+                            <span class="text-bg-success p-1 rounded-2 mt-4">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 upperwear ">
+                        <div class="collection-img position-relative">
+                            <img src="d0eb8581baf59eeb4bb73f0fbf6b84cd.jpg" alt="" class="w-100">
+                            <span
+                                class="position-absolute text-black text-bg-warning d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="">
+                            <p class="text-capitalize my-1 fw-bolder text-start">Lambskin Leather Shirt Jacket</p>
+                            <p class="text-capitalize my-1 text-start text-lowercase"> Jasper, with a ready-to-go-
+                                anywhere attitude
+                            </p>
+                            <span class="fw-bold text-success ">50% off</span>
+                            <span class="fw-bold text-decoration-line-through">₹2600</span>
+                            <span class="fw-bold ">₹1100</span> <br>
+                            <span class="text-bg-warning p-1 rounded-2 mt-4">Latest Trend</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Of Collection -->
+
+    <section class="bottom-wear my-4">
+
+        <div class="container">
+            <div class="swiper mySwiper  pb-4">
+                <div class="title text-center">
+                    <h2 class="position-relative d-inline-block pt-3" id=accessories>Accessories</h2>
+                </div>
+                <div class="swiper-wrapper bottom mt-2 ">
+                    <div class="swiper-slide ">
+                        <img src="120e51deff8cc10336d6eca432c347c3.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide ">
+                        <img src="4c8043dc8c820d46c7f4007cc089d754.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-success p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="47d3bb731941e056f24a453bdbcc0221.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1000</span>
+                        <span class="fw-bold ">₹600</span> <br>
+                        <span class="text-bg-danger p-1 rounded-2 mt-4">5 left</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="4a6e108942c0cfb7ed61ae4148dc1a2e.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="a356bff8ed0de182d4e9472985eff668.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="c08043dfae71a00d683841ba181aeb1c.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="8a118a9d8c3e2a6706547b595f0456bf.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="eadd336e35f712fff30f314c11609b7d.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="ffbbe3af4aed78d6defeef753ab1d8cb.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="3cf3a503ab92d1c704c744c787ff5c54.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="8accea8c47a47a4677c8dc51ba1dca8b.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="89e1cf4405cf91f6c782bac890ddd670.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="c2119b186cc5027d762b0005fab5d83a.jpg" /> <br>
+                        <span class="fw-bold text-success ">40% off</span>
+                        <span class="fw-bold text-decoration-line-through">₹1500</span>
+                        <span class="fw-bold ">₹900</span> <br>
+                        <span class="text-bg-primary p-1 rounded-2 mt-4">Hot Deal</span>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="trends">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative  d-inline-block pt-3 mb-4" id="trend">Trends</h2>
+            </div>
+
+            <div class="flex-md-row gap-4 justify-content-center">
+                <img src="suit.webp" alt="" class="img-fluid mx-md-4 ">
+                <h1>Smart Casual Dress Code: A Modern Man’s Guide For 2023</h1>
+                <p>It’s the dress code that nobody wants to see on an invitation, but we're here to unsure you're never
+                    over- or underdressed again.</p>
+                <span class="text-bg-primary p-1 rounded-2 mt-4">Buy Now</span>
+            </div>
+
+            <div class="flex-md-row gap-4 my-5 py-5 justify-content-center">
+                <img src="genz.webp" alt="" class="img-fluid mx-md-4 float-md-end">
+                <h1>The Men’s Fashion Trends You Should Know For Spring/Summer 2023</h1>
+                <p>The key to retaining your sartorial self-respect lies in the ability to successfully differentiate
+                    between the fleeting fads and the future classics</p>
+                <span class="text-bg-warning p-1 rounded-2 mt-4">Order Now</span>
+            </div>
+            <div class="flex-md-row gap-4 my-5 py-5 justify-content-center">
+                <img src="glasses.webp" alt="" class="img-fluid mx-md-4 float-md-start">
+                <h1>The Affordable Aviators</h1>
+                <p>Not only do these aviators pack the kind of timeless cool made famous by Hollywood stars of old, they
+                    do it via a handsome acetate frame that’s sleek, sturdy, and above all, affordable. (It helps that
+                    you can add your prescription to them with a few lazy clicks.) </p>
+                <span class="text-bg-success p-1 rounded-2 mt-4">Shop Now</span>
+            </div>
+            <div class="flex-md-row gap-4 my-5 py-5 justify-content-center">
+                <img src="per.jpg" alt="" class="img-fluid mx-md-4 float-md-end">
+                <h1>The Men's Essential Guide to Cologne, Man Perfume</h1>
+                <p>The key to retaining your sartorial self-respect lies in the ability to successfully differentiate
+                    between the fleeting fads and the future classics</p>
+                <span class="text-bg-warning p-1 rounded-2 mt-4">Order Now</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative  d-inline-block pt-3 mb-4" id="customize">Customize</h2>
+            </div>
+            <div class="row gap-2 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 rounded-1 pt-4 px-4 bg-body-secondary">
+                    <div class="collection-img position-relative">
+                        <img src="customize1.webp" alt="" class="w-100 shadow">
+                    </div>
+                    <div class="">
+                        <h4 class="card-title">Men Black Customizable T-shirt
+                        </h4>
+                        <p class="card-text mb-0 d-inline">₹499</p>
+                        <span class="card-text mb-0 text-decoration-line-through opacity-50">₹949</span>
+                        <p class="card-text mt-0 border border-success bg-body-tertiary">100% Cotton</p>
+                        <a href="#" class="btn">Customize Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3  rounded-1 pt-4 pb-2 px-4 bg-body-secondary">
+                    <div class="collection-img position-relative">
+                        <img src="customize2.webp" alt="" class="w-100 shadow">
+                    </div>
+                    <div class="">
+                        <h4 class="card-title">Men White Customizable Oversized T-shirt
+                        </h4>
+                        <p class="card-text mb-0 d-inline">₹649</p>
+                        <span class="card-text mb-0 text-decoration-line-through opacity-50">₹1199</span>
+                        <p class="card-text mt-0 border border-success bg-body-tertiary">100% Cotton</p>
+                        <a href="#" class="btn">Customize Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3  rounded-1 pt-4 px-4 bg-body-secondary">
+                    <div class="collection-img position-relative">
+                        <img src="cu.webp" alt="" class="w-100 shadow">
+                    </div>
+                    <div class="">
+                        <h4 class="card-title">Men Black Legends are born Oversized T-shirt
+                        </h4>
+                        <p class="card-text mb-0 d-inline">₹699</p>
+                        <span class="card-text mb-0 text-decoration-line-through opacity-50">₹1149</span>
+                        <p class="card-text mt-0 border border-success bg-body-tertiary">100% Cotton</p>
+                        <a href="#" class="btn">Customize Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3  rounded-1 pt-4 px-4 bg-body-secondary">
+                    <div class="collection-img position-relative">
+                        <img src="cu4.webp" alt="" class="w-100 shadow">
+                    </div>
+                    <div class="">
+                        <h4 class="card-title overflow-hidden">Men's Off White Mr.Lazy Topography T-shirt
+                        </h4>
+                        <p class="card-text mb-0 d-inline">₹599</p>
+                        <span class="card-text mb-0 text-decoration-line-through opacity-50">₹1049</span>
+                        <p class="card-text mt-0 border border-success bg-body-tertiary">100% Cotton</p>
+                        <a href="#" class="btn">Customize Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3  rounded-1 pt-4 px-4 bg-body-secondary">
+                    <div class="collection-img position-relative">
+                        <img src="cu5.webp" alt="" class="w-100 shadow">
+                    </div>
+                    <div class="">
+                        <h4 class="card-title overflow-hidden">Men's Customizable Oversized Full-Sleeves T-shirt
+                        </h4>
+                        <p class="card-text mb-0 d-inline">₹799</p>
+                        <span class="card-text mb-0 text-decoration-line-through opacity-50">₹1249</span>
+                        <p class="card-text mt-0 border border-success bg-body-tertiary">100% Cotton</p>
+                        <a href="#" class="btn">Customize Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3  rounded-1 pt-4 px-4 pb-2 bg-body-secondary">
+                    <div class="collection-img position-relative">
+                        <img src="cu6.webp" alt="" class="w-100 shadow">
+                    </div>
+                    <div class="">
+                        <h4 class="card-title overflow-hidden">Men's Off White It Took Years To Look This
+                        </h4>
+                        <p class="card-text mb-0 d-inline">₹799</p>
+                        <span class="card-text mb-0 text-decoration-line-through opacity-50">₹1249</span>
+                        <p class="card-text mt-0 border border-success bg-body-tertiary">100% Cotton</p>
+                        <a href="#" class="btn">Customize Now</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="aboutus" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-content-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-3 ">
+                        <h2 class="position-relative  d-inline-block pt-3 mb-4 ms-5" id="customize">Customize</h2>
+                    </div>
+
+                    <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque
+                        quia at vel, accusamus
+                        ratione laborum? Non quasi debitis eius.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sapiente voluptate a adipisci iure
+                        autem omnis. Similique odit iste odio doloremque atque, hic culpa rem cupiditate veritatis
+                        labore ex voluptates ab ad corporis reprehenderit repellendus officia sapiente eos maxime!
+                        Distinctio, quibusdam quod nesciunt quia suscipit iusto illum eligendi, consequuntur debitis
+                        aspernatur sequi porro. Nemo saepe veniam ut tempora veritatis, quisquam, quam vel rem odio
+                        suscipit numquam. Enim, quisquam doloremque! Cupiditate.
+                    </p>
+
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="mfs.png" alt="" class="img-fluid pb-3"
+                        style="height: 400px; width: 1000px; border-radius: 2px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark py-3">
+        <div class="container">
+
+            <div class="row text-white">
+                <div class="col-md-6 col-lg-3">
+                    <a href="index.html"
+                    style="font-family:'Kaisei Tokumin', serif; text-decoration: none; color: white; font-size:20px;">MFS</a>
+                <p class="text-white mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium assumenda
+                    obcaecati eaque at deserunt! Repellat perferendis dolor quae impedit, atque minima eius similique
+                    laborum obcaecati dignissimos fugiat, tempore, porro rerum.</p>
+    
+                </div>
+            
+            
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light">Links</h5>
+                <ul class="list-unstyled">
+                    <li class="my-3"><a href="#home" class="text-white text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>
+                            Home </a></li>
+                    <li class="my-3"><a href="#collection" class="text-white text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Collection
+                        </a></li>
+                      <li class="my-3"><a href="#accessories" class="text-white text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Accessories
+                        </a></li>
+                    <li class="my-3"><a href="#trend" class="text-white text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Trend
+                        </a></li>
+                    <li class="my-3"><a href="#customize" class="text-white text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Customize
+                        </a></li>
+                    <li class="my-3"><a href="#aboutus" class="text-white text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>About us
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Contact Us </h5>
+                <div class="d-flex justify-content-start align-items-start my-2">
+                    <span class="me-3">
+                        <i class="fas fa-map-marked-alt "></i>
+                    </span>
+                    <span class="fw-light">Sector 6, Mahavir Pura , Gurgoan,Haryana</span>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-start my-2">
+                    <span class="me-3">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="fw-light">mfs.support@gmail.com</span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2">
+                    <span class="me-3">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <span class="fw-light">+919563622734</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+<h5 class="fw-light mb-3">Follow Us </h5>
+<div >
+    <ul class="list-unstyled d-flex">
+        <li> 
+            <a href="#" class="text-white text-decoration-none fs-4 me-4"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li> 
+            <a href="#" class="text-white text-decoration-none fs-4 me-4"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li> 
+            <a href="#" class="text-white text-decoration-none fs-4 me-4"><i class="fab fa-twitter "></i></a>
+        </li>
+        <li> 
+            <a href="#" class="text-white text-decoration-none fs-4 me-4"><i class="fab fa-pinterest "></i></a>
+        </li>
+    </ul>
+</div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="main/jquery-3.6.4.js"></script>
+    <!-- Custome js -->
+    <script src="main/main.js"></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- filtering -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+</body>
+
+</html>
